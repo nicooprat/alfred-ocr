@@ -27,6 +27,10 @@ screencapture -i /tmp/ocr_snapshot.png
 tesseract /tmp/ocr_snapshot.png stdout
 ```
 
+## Known issues
+
+Taking a snapshot from a different monitor than your main one with a different resolution will make the script buggy. You'll get a warning like this `[ERROR: action.script] Warning. Invalid resolution 0 dpi. Using 70 instead.` which leads to poor results of text recognition. Ideas welcome on this one!
+
 ## Credits
 
 Inspired by the work of https://github.com/oott123/alfred-clipboard-ocr
