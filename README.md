@@ -5,11 +5,15 @@ Take a snapshot and recognize text
 
 ## Installation
 
-Install `tesseract` on your system: https://github.com/thiagoalessio/tesseract-ocr-for-php#installation
+1. Install `tesseract` on your system: https://github.com/thiagoalessio/tesseract-ocr-for-php#installation
+2. Download the [workflow](https://github.com/nicooprat/alfred-ocr/blob/master/OCR.alfredworkflow)
+3. Double click to install it in Alfred
 
 ## Usage
 
-Use the keywork `OCR`, take a screenshot, paste the text
+Use the keywork `OCR`, take a screenshot, wait for the notification, paste the text.
+
+[![Capture-d-e-cran-2018-11-09-a-10-06-07.png](https://i.postimg.cc/jdsggtDc/Capture-d-e-cran-2018-11-09-a-10-06-07.png)](https://postimg.cc/5jRSjcqQ)
 
 ## What's inside?
 
