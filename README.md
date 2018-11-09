@@ -1,7 +1,7 @@
 # Alfred Workflow OCR
 Take a snapshot and recognize text
 
-[![alfred-ocr.png](https://i.postimg.cc/3JV8jSRK/alfred-ocr.png)](https://postimg.cc/N58vBxmV)
+[![alfred-ocr.png](./alfred-ocr.png)](./alfred-ocr.png)
 
 ## Installation
 
@@ -24,7 +24,7 @@ export PATH=/usr/local/bin/:$PATH
 
 screencapture -i /tmp/ocr_snapshot.png
 
-tesseract /tmp/ocr_snapshot.png stdout
+tesseract /tmp/ocr_snapshot.png stdout 2>&1
 ```
 
 ## Known issues
