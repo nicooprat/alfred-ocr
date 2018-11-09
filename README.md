@@ -5,7 +5,7 @@ Take a snapshot and recognize text
 
 ## Installation
 
-1. Install `tesseract` on your system: https://github.com/thiagoalessio/tesseract-ocr-for-php#installation
+1. Install `tesseract` on your system: https://github.com/tesseract-ocr/tesseract/wiki#installation
 2. Download the [workflow](https://github.com/nicooprat/alfred-ocr/blob/master/OCR.alfredworkflow)
 3. Double click to install it in Alfred
 
