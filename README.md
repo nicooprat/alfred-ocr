@@ -27,6 +27,10 @@ screencapture -i /tmp/ocr_snapshot.png
 tesseract /tmp/ocr_snapshot.png stdout 2>&1
 ```
 
+## Discussion
+
+On Alfred forum: https://www.alfredforum.com/topic/12006-ocr-extract-text-from-snapshot/
+
 ## Known issues
 
 Taking a snapshot from a different monitor than your main one with a different resolution will make the script buggy. You'll get a warning like this `[ERROR: action.script] Warning. Invalid resolution 0 dpi. Using 70 instead.` which leads to poor results of text recognition. Ideas welcome on this one!
