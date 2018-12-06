@@ -24,7 +24,7 @@ export PATH=/usr/local/bin/:$PATH
 
 screencapture -i /tmp/ocr_snapshot.png
 
-tesseract /tmp/ocr_snapshot.png stdout 2>&1
+tesseract /tmp/ocr_snapshot.png -l {query} stdout 2>&1
 ```
 
 ## Discussion
