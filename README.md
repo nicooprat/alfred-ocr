@@ -5,7 +5,7 @@ Take a snapshot and recognize text
 
 ## Installation
 
-1. [Install `tesseract` on your system](https://github.com/tesseract-ocr/tesseract/wiki#macos): `sudo port install tesseract` or `brew install tesseract --with-all-languages`
+1. [Install `tesseract` on your system](https://github.com/tesseract-ocr/tesseract/wiki#macos): `sudo port install tesseract` or `brew install tesseract` and then `brew install tesseract-lang` if you need additional langugages.
 2. Download the [workflow](https://github.com/nicooprat/alfred-ocr/blob/master/OCR.alfredworkflow)
 3. Double click to install it in Alfred
 
