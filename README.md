@@ -3,6 +3,7 @@
 ## ** A slightly modified version from nicooprat's [project](https://github.com/nicooprat/alfred-ocr) **
 For some reason that project is not updated anymore so I made a new one based on it.
 
+## 
 Take a snapshot and recognize text
 
 [![alfred-ocr.png](./alfred-ocr.png)](./alfred-ocr.png)
