@@ -1,4 +1,7 @@
 # Alfred Workflow OCR
+
+## ** This is modified from nicooprat's [project](https://github.com/nicooprat/alfred-ocr) **
+
 Take a snapshot and recognize text
 
 [![alfred-ocr.png](./alfred-ocr.png)](./alfred-ocr.png)
