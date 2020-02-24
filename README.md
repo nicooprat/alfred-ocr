@@ -1,6 +1,6 @@
 # Alfred Workflow OCR
 
-## ** This is modified from nicooprat's [project](https://github.com/nicooprat/alfred-ocr) **
+## ** A slightly modified version from nicooprat's [project](https://github.com/nicooprat/alfred-ocr) **
 
 Take a snapshot and recognize text
 
