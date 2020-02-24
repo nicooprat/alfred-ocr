@@ -42,4 +42,4 @@ Taking a snapshot from a different monitor than your main one with a different r
 
 ## Credits
 
-Inspired by the work of https://github.com/oott123/alfred-clipboard-ocr
+Based on [project](https://github.com/nicooprat/alfred-ocr) by nicooprat
