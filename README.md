@@ -1,7 +1,9 @@
 # Alfred Workflow OCR
 
 ## ** A slightly modified version from nicooprat's [project](https://github.com/nicooprat/alfred-ocr) **
+For some reason that project is not updated anymore so I made a new one based on it.
 
+## 
 Take a snapshot and recognize text
 
 [![alfred-ocr.png](./alfred-ocr.png)](./alfred-ocr.png)
@@ -20,24 +22,24 @@ Use the keywork `OCR`, take a screenshot, wait for the notification, paste the t
 
 ## What's inside?
 
-Three lines of code:
+5 lines of code:
 
 ```bash
-export PATH=/usr/local/bin/:$PATH
-
+export PATH=/usr/local/bin/:$PATH 
 screencapture -i /tmp/ocr_snapshot.png
 
-tesseract /tmp/ocr_snapshot.png -l {query} stdout 2>&1
+if [{query} = ""]; then 
+  tesseract /tmp/ocr_snapshot.png stdout -l chi_tra+eng 2>&1 
+else 
+  tesseract /tmp/ocr_snapshot.png stdout -l {query} 2>&1 
+fi
 ```
 
 ## Discussion
 
 On Alfred forum: https://www.alfredforum.com/topic/12006-ocr-extract-text-from-snapshot/
 
-## Known issues
-
-Taking a snapshot from a different monitor than your main one with a different resolution will make the script buggy. You'll get a warning like this `[ERROR: action.script] Warning. Invalid resolution 0 dpi. Using 70 instead.` which leads to poor results of text recognition. A regex can hide the message: https://www.alfredforum.com/topic/12006-ocr-extract-text-from-snapshot/?tab=comments#comment-63118.
 
 ## Credits
 
-Inspired by the work of https://github.com/oott123/alfred-clipboard-ocr
+Based on [project](https://github.com/nicooprat/alfred-ocr) by nicooprat
