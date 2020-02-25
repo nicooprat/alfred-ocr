@@ -7,18 +7,23 @@ For some reason that project is not updated anymore so I made a new one based on
 
 Read the [Full tutorial](https://medium.com/@johnny0116/ultimate-online-courses-note-taking-with-notion-and-alfred-4c9e473e6ba0) here.
 
-Type `ocr` in Alfred -> take a screenshot -> wait for the notification -> paste the text!!
+##### 1. Type `ocr` in Alfred
+##### 2. Take a screenshot
+##### 3. Wait for the notification
+##### 4. Paste the text!!
 
 ![normal-use.gif](./normal-use.gif)
-You can use it to recognise any languages.
+##### You can use it to recognise any languages.
 
 
 ![multi-lang.gif](./multi-lang.gif)
-Even with multiple languages (traditional Chinese + English by default).
+##### Even with multiple languages (traditional Chinese + English by default).
 
-####You can also add a language as optionnal argument like this: `ocr fra` ([full list of language codes here](https://github.com/tesseract-ocr/tesseract/blob/b67ea2c1a70c56053e142a5fb7cc18fb29cdc4b8/src/training/language-specific.sh#L21)).
+##### You can also add a language as optionnal argument like this: `ocr fra` ([full list of language codes here](https://github.com/tesseract-ocr/tesseract/blob/b67ea2c1a70c56053e142a5fb7cc18fb29cdc4b8/src/training/language-specific.sh#L21)).
 
-####For changing the default languages, please read my [Medium article](https://medium.com/@johnny0116/ultimate-online-courses-note-taking-with-notion-and-alfred-4c9e473e6ba0).
+###
+
+### For changing the default languages, please read my [Medium article](https://medium.com/@johnny0116/ultimate-online-courses-note-taking-with-notion-and-alfred-4c9e473e6ba0).
 
 ## Installation
 
@@ -33,15 +38,14 @@ Even with multiple languages (traditional Chinese + English by default).
 
 ## What's inside
 
-5 lines of code:
-
 ```bash
 export PATH=/usr/local/bin/:$PATH 
 screencapture -i /tmp/ocr_snapshot.png
 
 if [{query} = ""]; then 
-   /////// now using OCR for traditional Chinese and English
-  tesseract /tmp/ocr_snapshot.png stdout -l chi_tra+eng 2>&1 //////// replace (chi_tra+eng) for your default language(s) here!! 
+   # now using OCR for traditional Chinese and English
+   # replace (chi_tra+eng) with your default language(s)
+  tesseract /tmp/ocr_snapshot.png stdout -l chi_tra+eng 2>&1 
 else 
   tesseract /tmp/ocr_snapshot.png stdout -l {query} 2>&1 
 fi
