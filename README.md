@@ -25,14 +25,14 @@ You can also add a language as optionnal argument like this: `ocr fra` ([full li
 
 1. [Install `tesseract` on your system](https://github.com/tesseract-ocr/tesseract/wiki#macos): 
    
-   a. Install Homebrew if you haven't
+   a. Install [Homebrew](https://brew.sh) if you haven't
    
-   b. Then `brew install tesseract`(if you need English only) or `brew install tesseract-lang`(if you need additional     langugages.)
+   b. Then `brew install tesseract` (if you need English only) or `brew install tesseract-lang`( if you need additional     langugages, this will install most of the popular languages)
    
 2. Download the [workflow](https://github.com/johnnyhoichuen/alfred-ocr/blob/master/OCR%20multi%20lang.alfredworkflow)
 3. Double click to install it in Alfred
 
-## If you need multiple languages
+## What's inside
 
 5 lines of code:
 
@@ -41,7 +41,9 @@ export PATH=/usr/local/bin/:$PATH
 screencapture -i /tmp/ocr_snapshot.png
 
 if [{query} = ""]; then 
-  tesseract /tmp/ocr_snapshot.png stdout -l chi_tra+eng 2>&1 //////// replace (chi_tra+eng) for your default language(s) here!! 
+  tesseract /tmp/ocr_snapshot.png stdout -l chi_tra+eng 2>&1 //////// replace (chi_tra+eng) for your default language(s)
+   //////([full list of language codes here](https://github.com/tesseract-ocr/tesseract/blob/b67ea2c1a70c56053e142a5fb7cc18fb29cdc4b8/src/training/language-specific.sh#L21)).
+here!! 
 else 
   tesseract /tmp/ocr_snapshot.png stdout -l {query} 2>&1 
 fi
