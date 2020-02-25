@@ -41,13 +41,13 @@ export PATH=/usr/local/bin/:$PATH
 screencapture -i /tmp/ocr_snapshot.png
 
 if [{query} = ""]; then 
-  tesseract /tmp/ocr_snapshot.png stdout -l chi_tra+eng 2>&1 //////// replace (chi_tra+eng) for your default language(s)
-   ([full list of language codes here](https://github.com/tesseractocr/tesseract/blob/b67ea2c1a70c56053e142a5fb7cc18fb29cdc4b8/src/training/language-specific.sh#L21)).
-here!! 
+   /////// now using OCR for traditional Chinese and English
+  tesseract /tmp/ocr_snapshot.png stdout -l chi_tra+eng 2>&1 //////// replace (chi_tra+eng) for your default language(s) here!! 
 else 
   tesseract /tmp/ocr_snapshot.png stdout -l {query} 2>&1 
 fi
 ```
+**([choose your language codes from here!](https://github.com/tesseractocr/tesseract/blob/b67ea2c1a70c56053e142a5fb7cc18fb29cdc4b8/src/training/language-specific.sh#L21)).
 
 ## Discussion
 
