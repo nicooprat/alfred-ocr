@@ -14,12 +14,11 @@ You can use it to recognise any languages.
 
 
 ![multi-lang.gif](./multi-lang.gif)
-Even with multiple languages (traditional Chinese + English here). Download the [multi lang workflow](https://github.com/johnnyhoichuen/alfred-ocr/blob/master/OCR%20multi%20lang.alfredworkflow)
+Even with multiple languages (traditional Chinese + English by default).
 
+####You can also add a language as optionnal argument like this: `ocr fra` ([full list of language codes here](https://github.com/tesseract-ocr/tesseract/blob/b67ea2c1a70c56053e142a5fb7cc18fb29cdc4b8/src/training/language-specific.sh#L21)).
 
-For changing the default languages, please read my [Medium article](https://medium.com/@johnny0116/ultimate-online-courses-note-taking-with-notion-and-alfred-4c9e473e6ba0).
-
-You can also add a language as optionnal argument like this: `ocr fra` ([full list of language codes here](https://github.com/tesseract-ocr/tesseract/blob/b67ea2c1a70c56053e142a5fb7cc18fb29cdc4b8/src/training/language-specific.sh#L21)).
+####For changing the default languages, please read my [Medium article](https://medium.com/@johnny0116/ultimate-online-courses-note-taking-with-notion-and-alfred-4c9e473e6ba0).
 
 ## Installation
 
