@@ -17,24 +17,24 @@ Use the keywork `OCR`, take a screenshot, wait for the notification, paste the t
 
 ## What's inside?
 
-Three lines of code:
+Just a tiny bash script:
 
 ```bash
 export PATH=/usr/local/bin/:$PATH
 
 screencapture -i /tmp/ocr_snapshot.png
 
-tesseract /tmp/ocr_snapshot.png -l {query} stdout 2>&1
+if [{query} = ""]; then
+tesseract --dpi 300 /tmp/ocr_snapshot.png  stdout 2>&1
+else
+tesseract --dpi 300 /tmp/ocr_snapshot.png stdout  -l {query} 2>&1
+fi
 ```
 
 ## Discussion
 
 On Alfred forum: https://www.alfredforum.com/topic/12006-ocr-extract-text-from-snapshot/
 
-## Known issues
-
-Taking a snapshot from a different monitor than your main one with a different resolution will make the script buggy. You'll get a warning like this `[ERROR: action.script] Warning. Invalid resolution 0 dpi. Using 70 instead.` which leads to poor results of text recognition. A regex can hide the message: https://www.alfredforum.com/topic/12006-ocr-extract-text-from-snapshot/?tab=comments#comment-63118.
-
 ## Credits
 
-Inspired by the work of https://github.com/oott123/alfred-clipboard-ocr
+Inspired by the work of https://github.com/oott123/alfred-clipboard-ocr. Thanks [bergmul](https://github.com/bergmul) for his help.
