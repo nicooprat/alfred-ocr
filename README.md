@@ -24,9 +24,9 @@ You can use this workflow without any argument. Then the script uses languages c
 ## Installation
 
 1. Install `tesseract` on your system: 
-1.1 Install [Homebrew](https://brew.sh) if you haven't
-1.2 Then run `brew install tesseract` (if you need English only) or `brew install tesseract-lang` (if you need additional langugages, this will install most of the popular languages)
-1. Download the [workflow](https://github.com/johnnyhoichuen/alfred-ocr/blob/master/OCR%20multi%20lang.alfredworkflow)
+  1. Install [Homebrew](https://brew.sh) if you haven't
+  1. Then run `brew install tesseract` (if you need English only) or `brew install tesseract-lang` (if you need additional langugages, this will install most of the popular languages)
+1. Download the workflow from Releases tab
 1. Double click to install it in Alfred
 
 ## What's inside
