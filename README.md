@@ -1,6 +1,8 @@
 
 # Alfred Workflow OCR
 
+[![Capture-d-e-cran-2018-11-09-a-10-06-07.png](https://i.postimg.cc/jdsggtDc/Capture-d-e-cran-2018-11-09-a-10-06-07.png)](https://postimg.cc/5jRSjcqQ)
+
 ## Basic usage
 1. Type `ocr` in Alfred
 2. Take a screenshot
@@ -24,10 +26,10 @@ You can use this workflow without any argument. Then the script uses languages c
 ## Installation
 
 1. Install `tesseract` on your system: 
-  1. Install [Homebrew](https://brew.sh) if you haven't
-  1. Then run `brew install tesseract` (if you need English only) or `brew install tesseract-lang` (if you need additional langugages, this will install most of the popular languages)
-1. Download the workflow from Releases tab
-1. Double click to install it in Alfred
+  - Install [Homebrew](https://brew.sh) if you haven't
+  - Then run `brew install tesseract` (if you need English only) or `brew install tesseract-lang` (if you need additional langugages, this will install most of the popular languages)
+2. Download the workflow from Releases tab
+3. Double click to install it in Alfred
 
 ## What's inside
 
