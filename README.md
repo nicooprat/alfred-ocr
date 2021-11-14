@@ -20,7 +20,7 @@ Use the keywork `OCR`, take a screenshot, wait for the notification, paste the t
 Just a tiny bash script:
 
 ```bash
-export PATH=/usr/local/bin/:$PATH
+export PATH="/opt/homebrew/bin:/usr/local/bin:${PATH}"
 
 screencapture -i /tmp/ocr_snapshot.png
 
